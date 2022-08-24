@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "gatsby";
+import Layout from "../components/layout";
 
 function AboutPage() {
   return (
-    <main>
-      <h1>About me</h1>
+    <Layout pageTitle="About me">
       <p>
         Hi there! I'm the proud creator of this site, which I built with Gatsby.
       </p>
-    </main>
+    </Layout>
   );
 }
 

@@ -1,12 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby";
+import Layout from "../components/layout";
 
 function IndexPage() {
   return (
-    <main>
-      <h1>Welcome to my Gastby site</h1>
+    <Layout pageTitle="Home Page">
       <p>I'm making this by following the Gatsby Tutorial.</p>
-    </main>
+    </Layout>
   );
 }
 
