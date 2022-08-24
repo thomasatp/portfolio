@@ -19,7 +19,12 @@ function Layout({ pageTitle, children }) {
               Home
             </Link>
           </li>
-          <li>
+          <li className={navLinkItem}>
+            <Link to="/work" className={navLinkText}>
+              Work
+            </Link>
+          </li>
+          <li className={navLinkItem}>
             <Link to="/about" className={navLinkText}>
               About
             </Link>
