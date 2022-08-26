@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
 import Layout from "../components/layout";
+import Seo from "../components/seo";
 
 function AboutPage() {
   return (
@@ -15,5 +15,5 @@ function AboutPage() {
 export default AboutPage;
 
 export function Head() {
-  return <title>About Me</title>;
+  return <Seo title="About Me" />;
 }

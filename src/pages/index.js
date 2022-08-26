@@ -1,13 +1,11 @@
 import * as React from "react";
-import styled from "styled-components";
-import { Link } from "gatsby";
 import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
-import main from "../images/main.jpg";
+import Seo from "../components/seo";
 
 function IndexPage() {
   return (
-    <Layout pageTitle="Home Page">
+    <Layout pageTitle="Homepage">
       <p>I'm making this by following the Gatsby Tutorial.</p>
       <StaticImage alt="Clifford" src="../images/main.jpg" />
     </Layout>
@@ -16,4 +14,4 @@ function IndexPage() {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <Seo title="Homepage" />;

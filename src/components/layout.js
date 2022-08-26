@@ -1,17 +1,20 @@
 import React from "react";
-import styled from "styled-components";
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
 import {
   container,
   heading,
   navLinks,
   navLinkItem,
   navLinkText,
+  siteTitle,
 } from "./layout.module.css";
+import { useSiteMetadata } from "../hooks/useSiteMetadata";
 
 function Layout({ pageTitle, children }) {
+  const { title } = useSiteMetadata();
   return (
     <div className={container}>
+      <header className={siteTitle}>{title}</header>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
@@ -22,6 +25,11 @@ function Layout({ pageTitle, children }) {
           <li className={navLinkItem}>
             <Link to="/work" className={navLinkText}>
               Work
+            </Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/blog" className={navLinkText}>
+              Blog
             </Link>
           </li>
           <li className={navLinkItem}>
