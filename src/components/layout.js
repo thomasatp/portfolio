@@ -16,6 +16,8 @@ const Header = styled.header`
   line-height: 0.8;
   text-transform: uppercase;
   transform-origin: center center;
+
+  text-align: end;
 `;
 
 const Title = styled.h1`
@@ -25,6 +27,8 @@ const Title = styled.h1`
   text-transform: uppercase;
   transform-origin: center center;
   margin-right: 3.2rem;
+  width: 50%;
+  text-align: end;
 `;
 
 const Nav = styled.nav`
@@ -85,13 +89,7 @@ function Layout({ pageTitle, children }) {
           </ul>
         </Nav>
         <Main>
-          {
-            <Title>
-              Thomas
-              <br />
-              Drapeau
-            </Title>
-          }
+          <Title>{pageTitle}</Title>
           {children}
         </Main>
       </Container>
