@@ -22,5 +22,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    "gatsby-plugin-mdx",
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
   ],
 };

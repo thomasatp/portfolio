@@ -1,13 +1,20 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
+import styled from "styled-components";
 import Seo from "../components/seo";
+
+const Text = styled.p`
+  font-size: 1.8rem;
+  flex: 1;
+`;
 
 function IndexPage() {
   return (
-    <Layout pageTitle="Homepage">
-      <p>I'm making this by following the Gatsby Tutorial.</p>
-      <StaticImage alt="Clifford" src="../images/main.jpg" />
+    <Layout pageTitle="Thomas Drapeau">
+      <Text>
+        Hello, I'm Thomas Drapeau, UI designer and hobbyist developer.
+      </Text>
     </Layout>
   );
 }
