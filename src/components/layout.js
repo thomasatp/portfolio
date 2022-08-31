@@ -15,8 +15,6 @@ const Header = styled.header`
   font-weight: 500;
   line-height: 0.8;
   text-transform: uppercase;
-  transform-origin: center center;
-
   text-align: end;
 `;
 
@@ -29,11 +27,16 @@ const Title = styled.h1`
   margin-right: 3.2rem;
   width: 50%;
   text-align: end;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 3.2rem;
+    width: auto;
+    margin-right: 50%;
+  }
 `;
 
 const Nav = styled.nav`
   display: flex;
-  padding: 3.2rem;
+  padding: 3.2rem 4vw;
 
   ul {
     list-style: none;
@@ -43,9 +46,10 @@ const Nav = styled.nav`
     flex: 1;
 
     li {
-      padding: 0 3.2rem;
+      margin-left: 3.2rem;
       &:first-of-type {
         flex: 1;
+        margin-left: 0;
         &:first-child {
           display: flex;
         }
@@ -56,12 +60,16 @@ const Nav = styled.nav`
 
 const Main = styled.main`
   display: flex;
-  padding: 16rem;
+  padding: 8vw 4vw;
   justify-content: flex-start;
   align-items: flex-end;
   justify-content: center;
-`;
 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`;
 function Layout({ pageTitle, children }) {
   const { title } = useSiteMetadata();
 
