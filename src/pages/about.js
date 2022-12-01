@@ -4,8 +4,9 @@ import Seo from "../components/seo";
 
 function AboutPage() {
   return (
-    <Layout pageTitle="About me">
-      <p>
+    <Layout>
+      <h1 className="title">About me</h1>
+      <p className="body">
         Hi there! I'm the proud creator of this site, which I built with Gatsby.
       </p>
     </Layout>
@@ -14,6 +15,4 @@ function AboutPage() {
 
 export default AboutPage;
 
-export function Head() {
-  return <Seo title="About Me" />;
-}
+export const Head = () => <Seo title="About Me" />;

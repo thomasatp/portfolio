@@ -1,14 +1,11 @@
 import React from "react";
-import { Link } from "gatsby";
-import styled from "styled-components";
+
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 export default function Path({ to, children }) {
   return (
-    <Link
-      style={{ fontSize: "1.5rem", color: "#191919", textDecoration: "none" }}
-      to={to}
-    >
+    <AniLink cover direction="right" bg="#f4f4f4" className="link" to={to}>
       {children}
-    </Link>
+    </AniLink>
   );
 }
