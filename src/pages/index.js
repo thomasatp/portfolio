@@ -12,22 +12,18 @@ function IndexPage() {
           Hello 👋, UI designer depuis 6 ans et front end developer en devenir,
           je vous accompagne dans tous vos projets.
         </h1>
-        <Tile to="/kanji" title="Agence Kanji" subtitle="Création de site">
+        <Tile
+          to="/agence-kanji"
+          title="Agence Kanji"
+          subtitle="Création de site"
+        >
           <StaticImage src="../images/kanji.jpg" alt="Agence Kanji" />
         </Tile>
-        <Tile to="/kanji" title="Lacoste" subtitle="Checkout refit">
-          <StaticImage src="../images/checkout.jpg" alt="Checkout refit" />
-        </Tile>
-        <Tile to="/kanji" title="Agence Kanji" subtitle="Création de site">
-          <StaticImage src="../images/kanji.jpg" alt="Agence Kanji" />
-        </Tile>
-        <Tile to="/kanji" title="Lacoste" subtitle="Checkout refit">
-          <StaticImage src="../images/checkout.jpg" alt="Checkout refit" />
-        </Tile>
-        <Tile to="/kanji" title="Agence Kanji" subtitle="Création de site">
-          <StaticImage src="../images/kanji.jpg" alt="Agence Kanji" />
-        </Tile>
-        <Tile to="/kanji" title="Lacoste" subtitle="Checkout refit">
+        <Tile
+          to="/lacoste-checkout-refit"
+          title="Lacoste"
+          subtitle="Checkout refit"
+        >
           <StaticImage src="../images/checkout.jpg" alt="Checkout refit" />
         </Tile>
       </div>

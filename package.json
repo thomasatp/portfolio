@@ -27,6 +27,8 @@
     "gatsby-plugin-transition-link": "^1.20.5",
     "gatsby-source-filesystem": "^4.21.1",
     "gatsby-transformer-sharp": "^4.21.0",
+    "grommet-icons": "^4.8.0",
+    "grommet-styles": "^0.2.0",
     "gsap": "^3.11.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
