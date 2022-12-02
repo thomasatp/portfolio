@@ -1,39 +1,36 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
-import styled from "styled-components";
 import Seo from "../components/seo";
 import Path from "../components/path";
-
-const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-`;
-
-const ImageContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  background: #f4f4f4;
-  padding: 4vw;
-  border-radius: 0.8rem;
-  overflow: hidden;
-`;
 
 function IndexPage() {
   return (
     <Layout>
-      <p className="title">
-        Hello, I'm Thomas Drapeau, UI designer / Junior front End developer.
-      </p>
-      <Container>
-        <Tile to="/kanji" title="Agence Kanji">
+      <div className="row">
+        <h1 className="cell-7 cell-mt-12 subheadline mv-xxl pt-xxl">
+          Hello 👋, UI designer depuis 6 ans et front end developer en devenir,
+          je vous accompagne dans tous vos projets.
+        </h1>
+        <Tile to="/kanji" title="Agence Kanji" subtitle="Création de site">
           <StaticImage src="../images/kanji.jpg" alt="Agence Kanji" />
         </Tile>
-        <Tile to="/kanji" title="Checkout refit">
+        <Tile to="/kanji" title="Lacoste" subtitle="Checkout refit">
           <StaticImage src="../images/checkout.jpg" alt="Checkout refit" />
         </Tile>
-      </Container>
+        <Tile to="/kanji" title="Agence Kanji" subtitle="Création de site">
+          <StaticImage src="../images/kanji.jpg" alt="Agence Kanji" />
+        </Tile>
+        <Tile to="/kanji" title="Lacoste" subtitle="Checkout refit">
+          <StaticImage src="../images/checkout.jpg" alt="Checkout refit" />
+        </Tile>
+        <Tile to="/kanji" title="Agence Kanji" subtitle="Création de site">
+          <StaticImage src="../images/kanji.jpg" alt="Agence Kanji" />
+        </Tile>
+        <Tile to="/kanji" title="Lacoste" subtitle="Checkout refit">
+          <StaticImage src="../images/checkout.jpg" alt="Checkout refit" />
+        </Tile>
+      </div>
     </Layout>
   );
 }
@@ -47,11 +44,25 @@ export const Head = () => (
   />
 );
 
-function Tile({ to, title, children }) {
+function Tile({ to, title, subtitle, children }) {
   return (
-    <Path to={to}>
-      <ImageContainer>{children}</ImageContainer>
-      <p>{title}</p>
+    <Path className="cell-6 cell-mt-12 mb-s" to={to}>
+      <div className="row">
+        <div className="cell-12">
+          <div className="pt-xxl ph-xl b-medium-light br-sm overflow-hidden">
+            {children}
+            <div className="row">
+              <p className="cell-12 pt-l pb-xl body2 mt-s font-bold align-baseline">
+                {title}
+                <span className="body c-medium-dark font-regular ml-s">–</span>
+                <span className="body c-medium-dark font-regular ml-s">
+                  {subtitle}
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </Path>
   );
 }
