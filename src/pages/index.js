@@ -17,14 +17,24 @@ function IndexPage() {
           title="Agence Kanji"
           subtitle="Création de site"
         >
-          <StaticImage src="../images/kanji.jpg" alt="Agence Kanji" />
+          <StaticImage
+            src="../images/kanji.jpg"
+            alt="Agence Kanji"
+            placeholder="blurred"
+            quality="100"
+          />
         </Tile>
         <Tile
           to="/lacoste-checkout-refit"
           title="Lacoste"
           subtitle="Checkout refit"
         >
-          <StaticImage src="../images/checkout.jpg" alt="Checkout refit" />
+          <StaticImage
+            src="../images/checkout.jpg"
+            alt="Checkout refit"
+            placeholder="blurred"
+            quality="100"
+          />
         </Tile>
       </div>
     </Layout>
