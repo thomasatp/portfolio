@@ -7,14 +7,17 @@ import { Github } from "grommet-icons";
 import colors from "../utils/colors";
 
 function Page() {
-  const title = "Agence Kanji";
-  const role = "UI Design / development";
-  const tags = ["Figma", "React", "Next Js", "Sass"];
-  const link = "https://www.agencekanji.com/";
-  const image = "../images/kanji.jpg";
-  const repo = { exist: false, link: "" };
+  const title = "Todo App";
+  const role = "Development";
+  const tags = ["React", "Styled components"];
+  const link = "https://thomasatp.github.io/todo/";
+  const repo = {
+    exist: true,
+    link: "https://github.com/thomasatp/todo",
+  };
+  const image = "../images/todo.jpg";
   const description =
-    "Création de site web pour l'agence Kanji, spécialisée dans le conseil en Marketplaces. Conception UI sur Figma puis développement sur Next JS. Utilisation de Sass pour les styles, création du formulaire de contact avec nodemailer.";
+    "Création d'une simple application todo list. Chaque élément ajouté peut être modifié ou supprimé. La suppression globale est aussi possible.";
 
   return (
     <Layout>
@@ -84,7 +87,7 @@ export default Page;
 
 export const Head = () => (
   <Seo
-    title="Agence Kanji"
-    description="Création de site web pour l'agence Kanji, spécialisée dans le conseil en Marketplaces. Conception UI sur Figma puis développement sur Next JS. Utilisation de Sass pour les styles, création du formulaire de contact avec nodemailer."
+    title="Todo App"
+    description="réation d'une simple application todo list. Chaque élément ajouté peut être modifié ou supprimé. La suppression globale est aussi possible."
   />
 );

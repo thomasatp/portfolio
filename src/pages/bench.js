@@ -27,9 +27,9 @@ function Page() {
           <div className="row">
             <h1 className="cell-12 subheadline mb-sm">{title}</h1>
             <h2 className="cell-12 body mb-m">{role}</h2>
-            <div className="cell-12">
+            <div className="cell-12 wrap">
               {tags.sort().map((tag, index) => (
-                <p key={index} className="caption border br-l ph-s mr-xs">
+                <p key={index} className="caption border br-l ph-s mr-xs mb-xs">
                   {tag}
                 </p>
               ))}

@@ -32,7 +32,19 @@ function IndexPage() {
             >
               <StaticImage
                 src="../images/bench.jpg"
-                alt="Personnal development project"
+                alt="Bench"
+                placeholder="blurred"
+                quality="100"
+              />
+            </Tile>
+            <Tile
+              to="/todo"
+              title="Todo App"
+              subtitle="Personnal development project"
+            >
+              <StaticImage
+                src="../images/todo.jpg"
+                alt="Todo App"
                 placeholder="blurred"
                 quality="100"
               />
