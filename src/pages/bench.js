@@ -7,13 +7,18 @@ import { Github } from "grommet-icons";
 import colors from "../utils/colors";
 
 function Page() {
-  const title = "Lacoste Checkout refit";
-  const role = "UI Design";
-  const tags = ["Figma"];
-  const link = "https://www.lacoste.com/fr/";
-  const image = "../images/checkout.jpg";
-  const repo = { exist: false, link: "" };
-  const description = "Refonte du tunnel de commande de Lacoste";
+  const title = "Bench";
+  const role = "Development";
+  const tags = ["React", "Next Js", "Styled components", "Notion Api"];
+  const link = "https://bench-thomasatp.vercel.app/";
+  const repo = {
+    exist: true,
+    link:
+      "https://github.com/thomasatp/bench/tree/0711baccca3605539d67d1037d78abc9fd39e7ca",
+  };
+  const image = "../images/bench.jpg";
+  const description =
+    "Projet personnel detiné à référencer plusieurs sources d'inspiration. Utilisation de Notion API pour la base de données. La liste de résultats peut être filtrée par tag. Possibilité de basculer entre thème light et dark. Possibilité de basculer entre un scroll horizontal ou vertical (uniquement en version desktop).";
 
   return (
     <Layout>
@@ -37,7 +42,7 @@ function Page() {
             <div className="cell-12">
               <a
                 className="flex c-dark body font-bold align-center"
-                href={repo.link}
+                href={link}
                 target="_blank"
               >
                 Voir le site
@@ -83,7 +88,7 @@ export default Page;
 
 export const Head = () => (
   <Seo
-    title="Lacoste Checkout refit"
-    description="Refonte du tunnel de commande de Lacoste"
+    title="Bench"
+    description="Projet personnel detiné à référencer plusieurs sources d'inspiration. Utilisation de Notion API pour la base de données. La liste de résultats peut être filtrée par tag. Possibilité de basculer entre thème light et dark. Possibilité de basculer entre un scroll horizontal ou vertical (uniquement en version desktop)."
   />
 );

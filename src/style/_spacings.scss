@@ -1,6 +1,6 @@
 // Spacing values
 
-$sizes: (0: 0, xs: 0.4, s: 0.8, sm: 1.6, m: 2.4, ml: 3.2, l: 4.8, xl: 6.4, xxl: 12.8);
+$sizes: (0: 0, xxs: 0.2, xs: 0.4, s: 0.8, sm: 1.6, m: 2.4, ml: 3.2, l: 4.8, xl: 6.4, xxl: 12.8);
 
 @each $name, $size in $sizes {
     .br-#{$name} {

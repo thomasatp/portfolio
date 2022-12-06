@@ -2,7 +2,7 @@ import * as React from "react";
 import Nav from "./nav";
 import "../style/styles.scss";
 
-function Layout({ children }) {
+export default function Layout({ children }) {
   return (
     <>
       <Nav />
@@ -10,5 +10,3 @@ function Layout({ children }) {
     </>
   );
 }
-
-export default Layout;

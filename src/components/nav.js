@@ -11,10 +11,13 @@ export default function Nav() {
           </div>
           <menu>
             <li>
-              <Path to="/work">Work</Path>
-            </li>
-            <li className="ml-m">
-              <Path to="/about">About</Path>
+              <a
+                className="c-dark body"
+                href="mailto:drapeau.th@gmail.com"
+                target="_blank"
+              >
+                Contact
+              </a>
             </li>
           </menu>
         </div>

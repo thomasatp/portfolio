@@ -1,41 +1,56 @@
 import * as React from "react";
-import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
+import Layout from "../components/layout";
+import Tile from "../components/tile";
 import Seo from "../components/seo";
-import Path from "../components/path";
 
 function IndexPage() {
   return (
     <Layout>
       <div className="row">
-        <h1 className="cell-7 cell-mt-12 subheadline mv-xxl pt-xxl">
-          Hello 👋, UI designer depuis 6 ans et front end developer en devenir,
-          je vous accompagne dans tous vos projets.
+        <h1 className="cell-5 cell-mt-8 cell-m-12 subheadline mv-xxl pt-xxl mt-pt-0">
+          UI designer et front end developer en devenir.
         </h1>
-        <Tile
-          to="/agence-kanji"
-          title="Agence Kanji"
-          subtitle="Création de site"
-        >
-          <StaticImage
-            src="../images/kanji.jpg"
-            alt="Agence Kanji"
-            placeholder="blurred"
-            quality="100"
-          />
-        </Tile>
-        <Tile
-          to="/lacoste-checkout-refit"
-          title="Lacoste"
-          subtitle="Checkout refit"
-        >
-          <StaticImage
-            src="../images/checkout.jpg"
-            alt="Checkout refit"
-            placeholder="blurred"
-            quality="100"
-          />
-        </Tile>
+        <div className="cell-12">
+          <div className="row">
+            <Tile
+              to="/agence-kanji"
+              title="Agence Kanji"
+              subtitle="Création de site"
+            >
+              <StaticImage
+                src="../images/kanji.jpg"
+                alt="Agence Kanji"
+                placeholder="blurred"
+                quality="100"
+              />
+            </Tile>
+            <Tile
+              to="/bench"
+              title="Bench"
+              subtitle="Personnal development project"
+            >
+              <StaticImage
+                src="../images/bench.jpg"
+                alt="Personnal development project"
+                placeholder="blurred"
+                quality="100"
+              />
+            </Tile>
+            <Tile
+              to="/lacoste-checkout-refit"
+              title="Lacoste"
+              subtitle="Checkout refit"
+            >
+              <StaticImage
+                src="../images/checkout.jpg"
+                alt="Checkout refit"
+                placeholder="blurred"
+                quality="100"
+              />
+            </Tile>
+          </div>
+        </div>
       </div>
     </Layout>
   );
@@ -46,29 +61,6 @@ export default IndexPage;
 export const Head = () => (
   <Seo
     title="Homepage"
-    description="Hello, I'm Thomas Drapeau, UI designer and hobbyist developer."
+    description="UI designer et front end developer en devenir."
   />
 );
-
-function Tile({ to, title, subtitle, children }) {
-  return (
-    <Path className="cell-6 cell-mt-12 mb-s" to={to}>
-      <div className="row">
-        <div className="cell-12">
-          <div className="pt-xxl ph-xl b-medium-light br-sm overflow-hidden">
-            {children}
-            <div className="row">
-              <p className="cell-12 pt-l pb-xl body2 mt-s font-bold align-baseline">
-                {title}
-                <span className="body c-medium-dark font-regular ml-s">–</span>
-                <span className="body c-medium-dark font-regular ml-s">
-                  {subtitle}
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Path>
-  );
-}
