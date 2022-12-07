@@ -12,7 +12,8 @@ module.exports = {
       options: {
         lang: "fr",
       },
-    }`gatsby-plugin-sitemap`,
+    },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
