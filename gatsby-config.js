@@ -1,6 +1,7 @@
 const path = require(`path`);
 
 module.exports = {
+  trailingSlash: `always`,
   siteMetadata: {
     title: `Thomas Drapeau`,
     description: `UI designer et front end developer en devenir.`,
