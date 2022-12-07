@@ -9,10 +9,12 @@ export default function Tile({ to, title, subtitle, children }) {
           <div className="pt-xxl ph-xl mt-pt-l mt-ph-m b-medium-light br-sm overflow-hidden">
             {children}
             <div className="row">
-              <p className="cell-12 mb-l mt-m body2 font-bold align-baseline">
+              <p className="cell-12 wrap mb-l mt-m body2 font-bold align-baseline">
                 {title}
-                <span className="body c-medium-dark font-regular ml-s">–</span>
-                <span className="body c-medium-dark font-regular ml-s">
+                <span className="body c-medium-dark font-regular ml-s mr-s">
+                  –
+                </span>
+                <span className="body c-medium-dark font-regular">
                   {subtitle}
                 </span>
               </p>

@@ -8,7 +8,7 @@ import colors from "../utils/colors";
 
 function Page() {
   const title = "Todo App";
-  const role = "Development";
+  const role = "Dévelopement";
   const tags = ["React", "Styled components"];
   const link = "https://thomasatp.github.io/todo/";
   const repo = {
@@ -43,6 +43,7 @@ function Page() {
                 className="flex c-dark body font-bold align-center"
                 href={link}
                 target="_blank"
+                rel="noreferrer"
               >
                 Voir le site
                 <LinkNext
@@ -56,6 +57,7 @@ function Page() {
                   className="flex c-dark body font-bold align-center ml-m"
                   href={repo.link}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Voir le repository
                   <Github

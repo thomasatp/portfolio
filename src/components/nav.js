@@ -15,6 +15,7 @@ export default function Nav() {
                 className="c-dark body"
                 href="mailto:drapeau.th@gmail.com"
                 target="_blank"
+                rel="noreferrer"
               >
                 Contact
               </a>

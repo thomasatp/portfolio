@@ -37,8 +37,9 @@ function Page() {
             <div className="cell-12">
               <a
                 className="flex c-dark body font-bold align-center"
-                href={repo.link}
+                href={link}
                 target="_blank"
+                rel="noreferrer"
               >
                 Voir le site
                 <LinkNext
@@ -52,6 +53,7 @@ function Page() {
                   className="flex c-dark body font-bold align-center ml-m"
                   href={repo.link}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Voir le repository
                   <Github

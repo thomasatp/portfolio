@@ -7,6 +7,7 @@ module.exports = {
     siteUrl: `https://thomasdrapeau.com`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-sharp`,

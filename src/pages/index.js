@@ -25,11 +25,7 @@ function IndexPage() {
                 quality="100"
               />
             </Tile>
-            <Tile
-              to="/bench"
-              title="Bench"
-              subtitle="Personnal development project"
-            >
+            <Tile to="/bench" title="Bench" subtitle="Projet personnel">
               <StaticImage
                 src="../images/bench.jpg"
                 alt="Bench"
@@ -37,11 +33,7 @@ function IndexPage() {
                 quality="100"
               />
             </Tile>
-            <Tile
-              to="/todo"
-              title="Todo App"
-              subtitle="Personnal development project"
-            >
+            <Tile to="/todo" title="Todo App" subtitle="Projet personnel">
               <StaticImage
                 src="../images/todo.jpg"
                 alt="Todo App"

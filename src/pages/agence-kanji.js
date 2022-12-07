@@ -8,7 +8,7 @@ import colors from "../utils/colors";
 
 function Page() {
   const title = "Agence Kanji";
-  const role = "UI Design / development";
+  const role = "UI Design / dévelopement";
   const tags = ["Figma", "React", "Next Js", "Sass"];
   const link = "https://www.agencekanji.com/";
   const image = "../images/kanji.jpg";
@@ -40,6 +40,7 @@ function Page() {
                 className="flex c-dark body font-bold align-center"
                 href={link}
                 target="_blank"
+                rel="noreferrer"
               >
                 Voir le site
                 <LinkNext
@@ -53,6 +54,7 @@ function Page() {
                   className="flex c-dark body font-bold align-center ml-m"
                   href={repo.link}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Voir le repository
                   <Github

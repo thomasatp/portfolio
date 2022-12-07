@@ -8,7 +8,7 @@ import colors from "../utils/colors";
 
 function Page() {
   const title = "Bench";
-  const role = "Development";
+  const role = "Dévelopement";
   const tags = ["React", "Next Js", "Styled components", "Notion Api"];
   const link = "https://bench-thomasatp.vercel.app/";
   const repo = {
@@ -44,6 +44,7 @@ function Page() {
                 className="flex c-dark body font-bold align-center"
                 href={link}
                 target="_blank"
+                rel="noreferrer"
               >
                 Voir le site
                 <LinkNext
@@ -57,6 +58,7 @@ function Page() {
                   className="flex c-dark body font-bold align-center ml-m"
                   href={repo.link}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Voir le repository
                   <Github
